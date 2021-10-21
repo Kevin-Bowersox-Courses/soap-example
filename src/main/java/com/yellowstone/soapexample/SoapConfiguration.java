@@ -17,7 +17,6 @@ public class SoapConfiguration {
 	  @Bean
 	  public NumberServiceClient numberClient(Jaxb2Marshaller marshaller) {
 	    NumberServiceClient client = new NumberServiceClient();
-//	    client.setDefaultUri("http://www.dataaccess.com/webservicesserver/");
 	    client.setMarshaller(marshaller);
 	    client.setUnmarshaller(marshaller);
 	    return client;
